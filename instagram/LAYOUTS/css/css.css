@@ -1,0 +1,258 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+     
+}
+p{
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 43px;
+    color:#49df03ad;
+}
+#logo{
+    color: #ff7300;
+    font-size: 30px;
+    border: 2px solid #fff;
+    padding: 10px;
+    padding: 6px 22px 6px 22px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+     background-color:#000;
+     align-items: center;
+     height: 80px;
+     width: 100%;
+     box-shadow: 2px 5px  rgba(41, 35, 35, 0.884);
+}
+.listasM{
+    width: 100%;
+    display: flex;
+    flex-direction: row;   
+    justify-content:space-around;
+
+}
+.texto{
+    display: flex;
+    justify-items:auto ;
+    flex-direction: column;
+    align-content: center;
+    margin-right:30px ;
+    margin-top: 60px;
+    margin-left: 52px;
+}
+
+/** ANIMACOES**/
+.listasM li a:hover{
+    background-color: #ff7300;
+    color: #fff;
+    transition: ease .24s;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom: 12px solid #fff ;
+    padding: 10px;
+}
+.listasM li a:focus{
+    background-color: #ff7300;
+    color: #fff;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom: 12px solid #fff ;
+    padding: 10px;
+}
+.listasM li a{
+    font-size: 14pt;
+    margin-right:30px ;
+    color: #fff;
+}
+.head{
+   
+    width: 100%;
+    height: 500px;
+    text-align: start;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    
+
+}
+ 
+.sessao1{
+    background-color: rgba(190, 185, 185, 0.37);
+    width: 100%;
+    height: 10%px;
+     box-shadow: 2px 1px  rgba(0, 0, 0, 0.651);
+ 
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+#im1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width:90%;
+    height: 70%;
+    box-shadow: 3px 5px 7px 9px #000;
+}
+.slider{
+    
+}
+.slider2{
+    float: left;
+    position: relative;
+    width: 3200px;
+    animation: slid infinite 3s ease;
+}
+.slider2 img{
+   float: left;
+}
+@keyframes slid{
+    0%{
+        left:0px;
+    }
+    20%{
+        left:-800px; 
+    }
+    25%{
+        left:-800px; 
+    }
+    45%{
+        left:-1600px; 
+    }
+    50%{
+        left:-800px; 
+    }
+}
+ img{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width:30%;
+    height: 500px;
+    box-shadow: 3px 5px 7px 9px #000;
+    
+ }
+.artigos{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    height: 100px;
+
+}
+#txt1{
+    box-shadow: rgba(0, 0, 0, 0.651) 11px 13px 15px;
+    border-radius: 100%;
+    margin: 30px;
+    width: 20%;
+    border-left: 1px solid rgba(128, 125, 125, 0.815);
+    width: 50%;
+    padding: 80px;
+    height: 100px;
+}
+
+
+.cor1{
+    height: 70px;
+    width: 250px;
+    background-color: #ff7300;
+    position: absolute;
+    border-radius: 9px;
+   
+   }
+.cor2{
+ height: 0px;
+ width: 250px;
+ background-color: #fff;
+ position: absolute;
+ transition: height .1s ease;
+ border-radius: 9px;
+  
+}
+ 
+
+.btn1 a{
+ position: absolute;
+ color: #fff;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 20px;
+ text-shadow: 1px 1px 2px #000;
+ z-index:1;   
+ margin: 20px 80px ;
+}
+#logo{
+    --varia:#ffffff;
+  animation: neon;  
+  transition: ease-out 3s;
+  
+}
+#check{
+    display: none;
+}
+ 
+#logo{
+    animation: neon   infinite .2s ease-out alternate-reverse;
+    cursor: pointer;
+}
+@keyframes neon{
+    from{
+        filter: drop-shadow(0 0 0 var(--varia) );
+         
+    }
+    to{
+        filter: drop-shadow( 10px 5px 50px var(--varia));   
+        font-size: 15px;
+    }
+}
+@keyframes neon2{
+    from{
+        filter: drop-shadow(0 0 0 var(--varia) );         
+    }
+    to{
+        filter: drop-shadow( 10px 5px 50px var(--varia));   
+        font-size: 22px;
+    }
+}
+
+ .btn1:hover{
+     cursor: pointer;
+    
+}
+
+ .btn1:hover .cor2{
+    cursor: pointer;
+    height: 70px;
+    --varia:#ffffff;
+    transition: ease-out 2s;    
+}
+
+.listasM li{
+    position: static;
+}
+a{
+   
+}
+a:focus{
+    --varia:#ffffff;
+    animation: neon2   infinite .333s ease-out alternate-reverse;
+    transition: ease-out 2s;
+}
+.cor2:focus{
+    cursor: pointer;
+    height: 70px;
+    animation: neon;  
+    background-color: #000;
+    transition: ease-out .1s;
+   
+
+}
+/** FIM ANIMACOES**/
