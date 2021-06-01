@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href ="style.css"
+</head>
+<body>
+    <section class = "form-session">
+        <h1>  <<//>>
+
+            <span class ="logo">
+               
+                <span id ="one">
+                    Dline - 
+                 </span> 
+                 <span id ="two">
+                    Code 
+                  </span> 
+            </span>
+            
+        </h1>
+
+        <div class="form-wrapper">
+            <form action  ="">
+                <div class="input-block">
+                    <label for ="login-email">Email</label>
+                    <input type ="email" id ="login-email"/>
+                </div>
+                <div class="input-block">
+                    <label for ="login-password">Password</label>
+                    <input type ="password" id ="login-password"/>
+                </div>
+                <button type ="submit" class = "btn-login">Login</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+
+</html>
+<script>
+    const btnLogin = document.querySelector("button")
+  
+    const form = document.queryselector( 'form');
+    
+    btnLogin.document.addEventListener("click",event=>{
+         event.preventDefault(true);
+         form.classList.add("form-hide")
+          
+    })
+  
+  </script>
